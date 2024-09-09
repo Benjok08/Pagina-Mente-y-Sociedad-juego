@@ -1,0 +1,52 @@
+#Cuerpo{
+    background-attachment:scroll;
+    background-repeat: repeat;
+    background-size: 15% ;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    display: grid;
+    background-image: url("../images/Fondo.png");
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#Fondo{
+        background-color: white;
+        padding: 25px;
+        box-shadow: 0 0 100px 15px #000000;
+        min-width: 25%;
+        grid-area: 1 / 2 / 2 / 3;
+        text-align: center;
+        font-size: 1.3vw;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+        padding-inline: 10%;
+}
+
+img{
+    max-width: 100%;
+    z-index: 2;
+}
+
+p{
+    margin-top: 5%;
+}
+
+@media(max-width: 992px){
+    #Fondo{
+    font-size: 100%;
+    padding-inline: 5%;
+    z-index: 1;
+      grid-area: 1 / 1 / 3 / 4
+    }
+
+    #Cuerpo{
+        opacity: 90%;
+        z-index: -1;
+        background-size: 50%;
+    }
+  
+  }
