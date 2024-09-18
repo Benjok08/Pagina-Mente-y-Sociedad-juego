@@ -35,6 +35,15 @@ p{
     margin-top: 5%;
 }
 
+ul{
+    text-align: justify;
+}
+
+.liComodin{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 @media(max-width: 992px){
     #Fondo{
     font-size: 100%;
@@ -44,7 +53,7 @@ p{
     }
 
     #Cuerpo{
-        opacity: 90%;
+        opacity: 92%;
         z-index: -1;
         background-size: 50%;
     }
